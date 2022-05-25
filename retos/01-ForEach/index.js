@@ -17,9 +17,8 @@ tasks.forEach( task => {
 
   taskList.innerHTML += `
     <label for="${task.name}">
-      <input type="checkbox" name="ej" ${status}/>
+      <input type="checkbox" id="${task.name}" ${status}/>
       ${task.name}
-    </label>
-    <br>
+    </label>    
   `
 })
