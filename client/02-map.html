@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map - Curso de manipulación de arrays en JS</title>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script>
+    const products = [
+      { title: 'Burger', price: 5},
+      { title: 'Pizza', price: 15},
+      { title: 'Chips', price: 5},
+      { title: 'Soda', price: 15},
+    ];
+
+    const app = document.getElementById('app');
+    const list = products.map(product => {
+      return `<li>${product.title} - $ ${product.price}</li>`;
+    });
+
+    console.log(list.join(''));
+    app.innerHTML = list.join('');
+  </script>
+</body>
+</html>
