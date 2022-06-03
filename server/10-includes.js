@@ -13,4 +13,4 @@ isInArray; // true
 
 const isInArray2 = pets.includes('cat');
 
-console.log(isInArray2);
+isInArray2; // true
